@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	text-decoration: none;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	background-color: #fafafa;
+	font-family:Trebuchet MS,Helvitica;
+}
+header{
+	width: 100%;
+	padding:10px 0.5px 0px 0.5px;
+	background: transparent;
+	float: left;
+	position: fixed;
+
+}
+header #logo{
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.3s;
+
+}
+header #logo span{
+	font-size: 1.7em;
+	line-height: 45px;
+	margin-left: 40px;
+	font-family: 'Suez One' serif;
+
+}
+@media(min-width: 701px){
+	#logo{
+		float: left;
+		width: 30%;
+		font-size: 1.1em;
+
+	}
+	#about{
+		float: right;
+		width: 67%;
+
+	}
+}
+@media(max-width: 700px){
+	#logo{
+		width: 100%;
+		font-size: 1.5em;
+		margin-top: 15px;
+		
+	}
+	#about{
+		float: left;
+		width: 100%;
+
+	}
+}
+#about{
+	text-align: center;
+	font-size: 1em;
+	line-height: 40px;
+	margin-bottom: 10px;
+	transition: all 0.3s;
+
+}
+#about > a {color: #fff;
+	transition: all 0.4s;
+	}
+#about > a:hover{
+	color:#b0b0b0;
+	text-decoration:none; 
+	transition: all 0.3s;
+	background-color: #fff;
+	color: black;
+	padding: 10px 10px 10px 10px;
+
+}
+#about > a:not(:last-child){
+	margin-right: 7%;
+}
+/* Стили для фиксирокания шапки*/
+.fixed{
+	z-index:5000;
+	background-color: #fff;
+	border-bottom: 1px solid silver;
+}
+header.fixed #logo{
+	color: #343434;
+
+}
+.fixed #about a {color:#343434}
+.fixed #about a:hover {color:#7c7c7c}
+
+/*головний блок сайту*/
+#top{
+	width: 100%;
+	height: 1000px;
+	background-blend-mode: multiply;
+	background-color: #2e3a44;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	font-size: 3em;
+	background-image: url(https://i.etsystatic.com/15465297/r/il/55f4a5/1674063317/il_794xN.1674063317_gud0.jpg);
+
+}
+@media(min-width: 1001px){
+	#top{
+		font-size: 3em;
+	}
+}
+@media(max-width: 1001px) and (min-width:651px ){
+	#top{
+		font-size: 2em;
+	}
+}
+@media(max-width: 651px){
+	#top{
+		font-size: 1em;
+		padding-top: 20%;
+	}
+}
+#top h1 {
+	padding-top: 20%;
+
+}
+#top h3{
+	color:#ccc;
+}
+
+/*Блок з возможностями*/
+#main{
+	padding: 100px 20%;
+	width: 60%;
+	float: left;
+	background-color: #f6f6f6;
+	border-top: 2px solid black;
+	color: #484848;
+	font-size: 1.3em;
+}
+#main div{
+	width: 48%;
+	margin-right: 2%;
+	float:left;
+
+}
+#main h2{
+	font-size: 3em
+}
+#main span{
+	color: #a0a0a0;
+}
+@media(min-width: 1401px){
+	#main{
+		padding: 100px 10%;
+		width: 80%;
+	}
+}
+@media(max-width: 1400px){
+	#main{
+		padding: 100px 20%;
+		width: 60%;
+	}
+}
+@media(max-width: 700px){
+	#main div{
+		width: 98%!important;
+
+		
+	}
+}
+#overview{
+	float: left;
+	background-blend-mode: multiply; 
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 100px 0;
+	width: 100%;
+	text-align: center;
+	min-height: 400px;
+	color: white;
+	background-image: url(https://i.etsystatic.com/15465297/r/il/55f4a5/1674063317/il_794xN.1674063317_gud0.jpg);
+}
+#overview h2{
+	font-size: 4em;
+}
+#overview h4{
+	font-size: 2em;
+	color:#ccc;
+
+}
+#overview img{
+	background-color: #fafafa;
+	padding: 5px;
+	barder:2px solid black;
+	float: left;
+	max-width: 500px;
+
+}
+#overview span{
+	float: right;
+	width: 100%;
+	font-size: 2em;
+	margin-top: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

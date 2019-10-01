@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>моя страница</title>
+	  <link href="home.css" rel="stylesheet">
+
+</head>
+<body>
+<header>
+	<div id="logo" onclick="slowScroll('#top')">
+		<span>Mr.Programist</span>
+	</div>
+	<div id="about">
+	<a href="#" title="Возможности"onclick="slowScroll('#main')">Возможности</a>
+	<a href="#" title="Приемущества"onclick="slowScroll('#overriew')">Приемущества</a>
+	<a href="#" title="Контакти"onclick="slowScroll('#contacts')">Контакти</a>
+	<a href="#" title="saq"onclick="slowScroll('#faq')">Ответи на вопроси</a>
+	</div>
+</header>
+<div id="top">
+	<h1>Програмирование</h1>
+	<h3>Как способ жизни</h3>
+</div>
+<div id="main">
+	<div class="intro">
+		<h2>Наши услуги помогут вам</h2>
+		<span>большой вибор всего что вам пригодится!</span>
+	</div>
+	<div class="text">
+		<span>Программи́рование — процесс создания компьютерных программ.
+
+По выражению одного из основателей языков программирования Никлауса Вирта «Программы = алгоритмы + структуры данных»[1][2].
+
+Программирование основывается на использовании языков программирования, на которых записываются исходные тексты программ.</span>
+	</div>
+</div>
+<div id="overview">
+	<h2>Приемущества</h2>
+	<h4>С Нами все проще</h4>
+<div id="img">
+</div>
+<div id="img">
+<span>якийсь тест
+</span>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+	funtion slowScroll(id){
+		$('body').animate({
+			scrollTop:$(id).offset().top
+		},500);
+	}
+
+	$(document).on("scroll", funtion(){
+		if($(window).scrollTop() === 0)
+			$("header").removeClass("fixed");
+		else
+			$("header").attr("class", "fixed");
+	});
+</script>
+</body>
+</html>
